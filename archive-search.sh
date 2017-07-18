@@ -1,12 +1,19 @@
 #!/bin/bash
-yum -y install dialog
 echo "Archive Searcher"
 
-###Declare variables
+###Declare main variables
 SRCHSTRG=$(dialog --title "Enter search string" --inputbox  1 16);
 SAVEAS=$(dialog --title "Output save location" --fselect /~ 14 48);
 STRTDATE=$(dialog --title "Start Date" --calendar); 
 ENDDATE=$(dialog --title "End Date" --calendar);
+
+###Declare truncated variables
+STRTDY=$();
+ENDDY=$();
+STRTMO=$();
+ENDMO=$();
+STRTYR=$();
+ENDYR=$();
 
 ###Declare functions
 search()
