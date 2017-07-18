@@ -6,4 +6,6 @@ Several cool features I learned about bash scripting from originally developing 
 
 A limitation to using bash functions can be summarized by the word "variable passthrough". C and Python do this better, so the final output will incorporate Python snippets.
 
+Before checking out the code and confirming whether or not it runs, be sure to visit the Prerequesites page first: https://github.com/espressobeanies/Archive-Search/blob/master/Prerequesites
+
 Please note, the script is a work-in-progress and has not been vetted for errors yet.
