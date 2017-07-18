@@ -8,23 +8,28 @@ STRTDATE=$(dialog --title "Start Date" --calendar);
 ENDDATE=$(dialog --title "End Date" --calendar);
 
 ###Declare truncated variables
-STRTDY=$();
-ENDDY=$();
-STRTMO=$();
-ENDMO=$();
-STRTYR=$();
-ENDYR=$();
+STRTDY=$(cut -c 1-2 $STRTDATE);
+ENDDY=$(cut -c 1-2 $ENDDATE);
+STRTMO=$(cut -c 4-5 $STRTDATE);
+ENDMO=$(cut -c 4-5 $ENDDATE);
+STRTYR=$(cut -c 7-8 $STRTDATE);
+ENDYR=$(cut -c 7-8 $ENDDATE);
 
 ###Declare functions
 search()
 {
   for(i=$1;i<=$2;i++)
     {
-      zgrep "$SRCHSTRG" /home/BroLogs/$i* >> $SAVEAS &    
+      zgrep "$SRCHSTRG" /home/BroLogs/$i* >> $SAVEAS &  
+      echo "Now searching" $i ###Replace with dialog info box
     }
 }
 
-###Execute functions
+###Execute functions baesed on IF-statements. Incomplete ATM.
 search $STRTDY $ENDDY
+search $STRTMO $ENDMO
+search $STRTYR $ENDYR
 
 ###Output
+clear
+echo "Search complete!"\n"Your results can be viewed from the following location:" $SAVEAS
