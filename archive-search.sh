@@ -11,7 +11,7 @@ ENDDATE=$(dialog --title "End Date" --calendar);
 ###Searcher using zgrep and awk
 for(i=0;i<31;i++)
 {
-zgrep /home/BroLogs/* | awk{'print $1 $3 $4'} >> $SAVEAS &
+zgrep "$SRCHSTRG" /home/BroLogs/* >> $SAVEAS &
 }
 
 ###Output
