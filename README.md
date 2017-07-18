@@ -9,3 +9,4 @@ A limitation to using bash functions can be summarized by the word "variable pas
 Before checking out the code and confirming whether or not it runs, be sure to visit the Prerequesites page first: https://github.com/espressobeanies/Archive-Search/blob/master/Prerequesites
 
 Please note, the script is a work-in-progress and has not been vetted for errors yet.
+https://github.com/espressobeanies/Archive-Search/blob/master/archive-search.sh
