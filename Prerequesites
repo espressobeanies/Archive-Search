@@ -1,0 +1,7 @@
+The only prerequesite for this program is the Linux dialog command and it can be installed from Ubuntu or CentOS from the following commands:
+
+APT-based distros:
+"apt-get install dialog"
+
+RPM-based distros:
+"yum -y install dialog"
