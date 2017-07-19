@@ -26,9 +26,18 @@ search()
 }
 
 ###Execute functions baesed on IF-statements. Incomplete ATM.
+if ($STRTDAY != $ENDDAY)
 search $STRTDY $ENDDY
+$STRTDAY=$STRTDAY+1
+
+if ($STRTMO != $ENDMO)
 search $STRTMO $ENDMO
+####continue####
+
+if ($STRTYR != $ENDYR)
 search $STRTYR $ENDYR
+#####continue####
+
 
 ###Output
 clear
