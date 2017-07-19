@@ -20,7 +20,7 @@ search()
 {
   for(i=$1;i<=$2;i++)
     {
-      zgrep "$SRCHSTRG" /home/BroLogs/$i* >> $SAVEAS &  
+      zgrep "$SRCHSTRG" /home/BroLogs/$i* | cf >> $SAVEAS &  
       echo "Now searching" $i ###Replace with dialog info box
     }
 }
