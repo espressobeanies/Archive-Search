@@ -5,3 +5,10 @@ APT-based distros:
 
 RPM-based distros:
 "yum -y install dialog"
+
+LBNL 'cf' tool
+wget ftp://ee.lbl.gov/cf.tar.gz
+tar zxvf cf.tar.gz
+cd cf-1.2.5/
+./configure
+make;make install
